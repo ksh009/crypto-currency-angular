@@ -12,8 +12,14 @@ contract KSHToken is ERC20 {
     }
 }
 
-/* ABI
+/* 
+Contract Address
+0x22eE34DC8359CdCDD47DC9015709AE2bc7fC5894
 
+Token Supply 
+10 [000 000 000 000 000 000]
+
+ABI
 [
 	{
 		"inputs": [
