@@ -13,6 +13,7 @@ contract KSHToken is ERC20 {
 }
 
 /* 
+# Currecy Address
 Contract Address
 0x22eE34DC8359CdCDD47DC9015709AE2bc7fC5894
 
