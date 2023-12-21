@@ -1,15 +1,20 @@
-require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-ethers");
+
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
 require("dotenv").config();
+console.log("config file accessed!");
 
 const privateKey = process.env.PRIVATE_KEY;
 
-const config = {
+module.exports = {
   networks: {
     hardhat: {
       chainId: 11155111,
     },
     testnet: {
-      url: "https://sepolia.infura.io/v3/",
+      url: "https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID", // Replace with your Infura project ID
       accounts: [privateKey],
     },
     // mainnet: {
@@ -19,8 +24,6 @@ const config = {
   },
   solidity: "0.8.18",
 };
-
-module.exports = { config };
 
 /*
 REF: https://github.com/pguso/angular-hardhat-starter-dapp/blob/main/tsconfig.json
