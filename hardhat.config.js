@@ -14,7 +14,7 @@ module.exports = {
       chainId: 11155111,
     },
     testnet: {
-      url: "https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID", // Replace with your Infura project ID
+      url: `https://sepolia.infura.io/v3/${process.env.INFURA_ID}`, // Replace with your Infura project ID
       accounts: [privateKey],
     },
     // mainnet: {

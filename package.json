@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run clean && npx hardhat compile && npx hardhat run scripts/deploy.js",
+    "clean": "rimraf artifacts cache",
+    "predeploy": "npm run clean"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +43,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.32",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.3.6",
     "typescript": "~5.2.2"
   }
