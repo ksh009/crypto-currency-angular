@@ -17,7 +17,11 @@ const config = {
     //   accounts: [privateKey],
     // },
   },
-  solidity: "0.8.19",
+  solidity: "0.8.18",
 };
 
 module.exports = { config };
+
+/*
+REF: https://github.com/pguso/angular-hardhat-starter-dapp/blob/main/tsconfig.json
+*/
