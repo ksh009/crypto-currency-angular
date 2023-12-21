@@ -13,8 +13,12 @@ module.exports = {
     hardhat: {
       chainId: 11155111,
     },
-    testnet: {
-      url: `https://sepolia.infura.io/v3/${process.env.INFURA_ID}`, // Replace with your Infura project ID
+    // testnet: {
+    //   url: `https://sepolia.infura.io/v3/${process.env.INFURA_ID}`, // Replace with your Infura project ID
+    //   accounts: [privateKey],
+    // },
+    sepolia: {
+      url: `https://sepolia.infura.io/v3/${process.env.INFURA_ID}`,
       accounts: [privateKey],
     },
     // mainnet: {
